@@ -1,5 +1,6 @@
 package com.cloud.test;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
+    @Value("${payment.notify-url}")
+    public String url;
 
     @RequestMapping("/hello")
     public String hello(){
-        return "spring boot demo 2";
+        return "spring boot demo 2 url " + url;
     }
 
 

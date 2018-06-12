@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: product
+    active: dev
 
 ---
 spring:
@@ -8,6 +8,13 @@ spring:
 server:
     address: 127.0.0.1
     port: 8081
+payment:
+    age: 28
+    notify-url: http://localhost:8080/hello1
+
+
+
+
 ---
 spring:
   profiles: test

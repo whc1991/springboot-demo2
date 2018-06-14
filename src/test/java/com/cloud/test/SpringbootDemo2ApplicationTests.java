@@ -13,8 +13,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-// @SpringBootTest
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+ @SpringBootTest
 @AutoConfigureMockMvc // 自动配置MockMvc这个类
 public class SpringbootDemo2ApplicationTests {
 
